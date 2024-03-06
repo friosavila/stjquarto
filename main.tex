@@ -1,0 +1,224 @@
+%% Template for Stata-Journal Quarto manuscript
+
+%% Main
+
+% main.tex - a driver for your Stata Journal insert
+% This file should only be changed according to the AUTHOR notes below.
+% The Stata Press document class
+
+\documentclass[bib]{statapress}
+% Page dimensions
+\usepackage[crop,newcenter,frame]{pagedims}
+% The Stata Journal styles
+\usepackage{sj}
+% Stata Log listings and useful macros
+\usepackage{stata}
+
+% Encapsulated PostScript figures
+\usepackage{epsfig}
+% Shadow package to render technical note figure
+\usepackage{shadow}
+\usepackage{amsmath,amssymb} 
+% EDITORS: volume number, issue number, month, and year
+
+%CodeThis is for Executed code. But may not be necessary
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{255,255,255}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.0,0.0}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.0,0.0}{#1}}
+
+%% Ref
+
+ 
+
+\sjsetissue{1}{2}{2}{2023}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% AUTHOR:  Include your article here.
+
+%% TITLE
+
+ 
+\title[Short toc Here]{Long title for title page of article insert En
+espalin}
+
+
+\makeatletter
+
+\inserttype[st0001]{article}
+\author{Rios-Avila, Canavire}{
+Fernando Rios-Avila\\
+Levy Economics Institute\\Annandale-on-Hudson, NY\\
+\href{mailto:friosavi@levy.org}{friosavi@levy.org}
+\and 
+Gustavo Canavire-Bacarreza\\
+The World Bank\\Washington, DC\\
+\href{mailto:gcanavire@levy.org}{gcanavire@levy.org}
+}
+ 
+ 
+ 
+
+\maketitle
+
+\begin{abstract}
+
+
+\keywords{\inserttag, Stata, LaTeX, Quarto, StataJ}
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+asd \bayesref{bayes} is an example of a reference to a bayesian model.
+
+\begin{equation}\phantomsection\label{eq-l1}{a = b}\end{equation}
+
+in Equation~\ref{eq-l1} we have a simple equation.
+
+Then Börsch-Supan (1987). However Zoghbi and Stojmenovic (1998) is also
+important. but Robinson (1970) mentioned there was a problem
+
+\subsection{Background}\label{background}
+
+asdasdasd
+
+\begin{stsyntax}
+    \dunderbar{reg}ress
+    \depvar\
+    \optindepvars\
+    \optif\
+    \optin\
+    \optweight\
+    \optional{,
+    \underbar{nocons}tant
+    \underbar{h}ascons
+    tsscons
+    vce({\it vcetype\/})
+    \underbar{l}evel(\num)
+    \underbar{b}eta
+    \underbar{ef}orm(\ststring)
+    \dunderbar{dep}name(\varname)  {\it display\_options}
+    \underbar{nohe}ader 
+    \underbar{notab}le  plus
+    \underbar{ms}e1
+    \underbar{coefl}egend}
+\end{stsyntax}
+
+\subsection{Background2}\label{background2}
+
+asd
+
+\subsection{More Stuff}\label{more-stuff}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-1}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-2}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-3}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-4}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-5}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\subsection{More Stuff}\label{more-stuff-6}
+
+asd asd asd
+
+asdasdasd asd asd asd
+
+asdasdasd asd asd
+
+asd
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-ABS87}
+Börsch-Supan, A. 1987. \emph{Econometric Analysis of Discrete Choice}.
+Heidelberg: Springer.
+
+\bibitem[\citeproctext]{ref-robinson70}
+Robinson, A. H. 1970. {``Erwin Josephus Raisz, 1893--1968.''}
+\emph{Annals of the Association of American Geographers} 60: 189--93.
+
+\bibitem[\citeproctext]{ref-zoghbi98}
+Zoghbi, A., and I. Stojmenovic. 1998. {``Fast Algorithms for Generating
+Integer Partitions.''} \emph{International Journal of Computer
+Mathematics} 70: 319--32.
+
+\end{CSLReferences}
+
+\clearpage
+
+\bibliographystyle{sj}
+\bibliography{references.bib}
+
+%
+
+\begin{aboutauthors}
+
+Fernando Rios-Avila is a Senior Economist at the Levy Economics
+Institute of Bard College.
+
+Gustavo Canavire-Bacarreza is a Senior Economist at the World Bank.
+
+\end{aboutauthors}
+
+\end{document}

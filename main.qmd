@@ -25,21 +25,15 @@ abstract: |
     This is an example of StataJ article made by me
 keywords: Stata, LaTeX, Quarto, StataJ
 format: 
-    pdf: 
-        documentclass: statapress
-        keep-tex: true
-        template: "template.tex"
-        template-partials: 
-            - _authors.tex
-        number-sections: true
+    stjquarto-pdf: default
+keep-tex: true        
 stata:    
     vv: 1
     ii: 2
     yyyy: 2023
     mm: 2
 bibliography: "references.bib"
-biblio-style: sj
-cite-method: natbib
+
  
 ---
 
