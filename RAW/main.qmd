@@ -1,0 +1,216 @@
+---
+title: "Long title for title page of article insert En espalin"
+shorttitle: "Short toc Here"
+author: 
+    - name: Fernando Rios-Avila
+      email: friosavi@levy.org
+      affiliations:
+        - name: Levy Economics Institute
+          city: Annandale-on-Hudson, NY     
+
+    - name: Gustavo Canavire-Bacarreza
+      email: gcanavire@levy.org
+      affiliations:
+      - name: "The World Bank"
+        city: Washington, DC
+  
+shortauthor: "Rios-Avila, Canavire"
+
+aboutauthors: |
+    Fernando Rios-Avila is a Senior Economist at the Levy Economics Institute of Bard College. 
+    
+    Gustavo Canavire-Bacarreza is a Senior Economist at the World Bank.
+
+abstract: |
+    This is an example of StataJ article made by me
+keywords: Stata, LaTeX, Quarto, StataJ
+format: 
+    pdf: 
+        documentclass: statapress
+        keep-tex: true
+        template: "template.tex"
+        template-partials: 
+            - _authors.tex
+        number-sections: true
+stata:    
+    vv: 1
+    ii: 2
+    yyyy: 2023
+    mm: 2
+bibliography: "references.bib"
+biblio-style: sj
+cite-method: natbib
+ 
+---
+
+
+# Introduction
+
+asd \bayesref{bayes} is an example of a reference to a bayesian model.
+
+$$a = b$${#eq-l1}
+
+in @eq-l1 we have a simple equation.
+
+Then @ABS87. However @zoghbi98 is also important. but @robinson70 mentioned there was a problem
+ 
+
+
+
+## Background
+
+asdasdasd
+
+```{=latex}
+\begin{stsyntax}
+    \dunderbar{reg}ress
+    \depvar\
+    \optindepvars\
+    \optif\
+    \optin\
+    \optweight\
+    \optional{,
+    \underbar{nocons}tant
+    \underbar{h}ascons
+    tsscons
+    vce({\it vcetype\/})
+    \underbar{l}evel(\num)
+    \underbar{b}eta
+    \underbar{ef}orm(\ststring)
+    \dunderbar{dep}name(\varname)  {\it display\_options}
+    \underbar{nohe}ader 
+    \underbar{notab}le  plus
+    \underbar{ms}e1
+    \underbar{coefl}egend}
+\end{stsyntax}
+```
+
+## Background2
+
+asd
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+## More Stuff
+
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+asd
+
+asdasdasd
+asd
+asd
+
+asd
+
+
+ 
