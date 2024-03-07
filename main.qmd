@@ -33,6 +33,7 @@ stata:
     yyyy: 2023
     mm: 2
 bibliography: "references.bib"
+cite-method: natbib
 
  
 ---
